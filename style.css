@@ -1,0 +1,273 @@
+*
+{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body
+{
+    /* background-image: url(/currencyConverter/backgroundimage.webp); */
+    background-color: goldenrod;
+}
+
+header
+{
+    height : 20vh;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: x-large;
+}
+
+main
+{
+    height : 80vh;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-box
+{
+    height : 30rem;
+    width : 30rem;
+    /* border: 2px solid black; */
+    background-color: white;
+    box-shadow: 5px 5px 40px black;
+}
+
+.outer-box-header
+{
+    height : 5rem;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.outer-box-content
+{
+    width : 100%;
+}
+
+#input,#output
+{
+    height : 2rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    margin: 1rem;
+    text-align: center;
+}
+
+.select-option
+{
+    height : 5rem;
+    width : 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.from , .to
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid black;  */
+    flex-wrap: wrap;
+}
+
+.from p ,.to p
+{
+    margin-left: 1rem;
+    font-size: x-large;
+}
+
+.flag
+{
+    height : 3rem;
+    width : 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black; 
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.flag select
+{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img
+{
+    height : 2rem;
+}
+
+.display-field
+{
+    height : 5rem;
+    width : 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+    margin-top: 1rem;
+}
+
+.display-field p
+{
+    font-size: large;
+}
+
+.display-field-input , .display-field-output
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+}
+
+.display-field-input p, .display-field-output p
+{
+    margin-left: 1rem;
+}
+
+#submit
+{
+    height : 5rem;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit button
+{
+    height : 2rem;
+    width : 5rem;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+}
+
+.rate
+{
+    text-align: center;
+}
+
+
+@media (max-width : 780px)
+{
+    header
+    {
+        height : 10vh;
+    }
+    .outer-box
+    {
+        height : 20rem;
+        width : 15rem;
+    }
+    .outer-box-header
+    {
+        height : 4rem;
+        font-size: 0.5rem;
+        margin-bottom: 0;
+    }
+    .from p ,.to p
+    {
+        font-size: medium;
+    }
+    .flag
+    {
+        height : 2rem;
+        width : 4.5rem;
+    }
+    img
+    {
+        height : 1rem;
+    }
+    .flag select option
+    {
+        font-size: x-small;
+    }
+    .display-field
+    {
+        height : 3rem;
+        /* border: 2px solid black; */
+        width : 100%;
+    }
+    .display-field p
+    {
+        font-size: x-small;
+    }
+    #input,#output
+    {
+        width : 5rem;
+    }
+}
+
+@media (min-width : 780px) and (max-width : 1024px)
+{
+    header
+    {
+        height : 10vh;
+    }
+    .outer-box
+    {
+        height : 25rem;
+        width : 22rem;
+    }
+    .outer-box-header
+    {
+        height : 4rem;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .from p ,.to p
+    {
+        font-size: large;
+    }
+    .flag
+    {
+        height : 2.5rem;
+        width : 5.5rem;
+    }
+    img
+    {
+        height : 2.5rem;
+    }
+    .flag select option
+    {
+        font-size: medium;
+    }
+    .display-field
+    {
+        height : 6rem;
+        /* border: 2px solid black; */
+        width : 100%;
+    }
+    .display-field p
+    {
+        font-size: medium;
+    }
+    #input,#output
+    {
+        width : 8rem;
+    }
+}
